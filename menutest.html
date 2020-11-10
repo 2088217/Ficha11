@@ -88,24 +88,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js><
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-
 beta.2/js/bootstrap.min.js" ></script>
 
-</body>
-<script>
-    $(document).ready(function() {
-    $.getJSON('https://final-project-recording-817f4.firebaseio.com/cardapio/.json', function(data) {
-    var html = '';
-    $.each(data, function(entryIndex, entry) {
-    html += '<div class="entry p-4">';
-    html += '<h3 class="cor-principal">' + entry.prato + '</h3>';
-    html += '<p class="obs">' + entry.obs + '</p>';
-    html += '<p class="cor-principal preco">';
-    html += entry.total;
-    html += ' euros</p>';
-    html += '</div>';
-    });
-    $('#cardapio').html(html);
-    });
-    });
-    </script>
-   
 
+</body>
 </html>
